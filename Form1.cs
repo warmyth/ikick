@@ -34,9 +34,6 @@ namespace iKick
             hook.KeyPressed +=
                 new EventHandler<KeyPressedEventArgs>(hook_KeyPressed);
             hook.RegisterHotKey(HotKeysHandler.ModifierKeys.Alt, Keys.X);
-            //functionManager.LuaDoString("print(\"Me: " + ObjectManager.Me.BaseAddress + "\");");
-            //functionManager.LuaDoString("freeslots = GetContainerNumFreeSlots(0) + GetContainerNumFreeSlots(1) + GetContainerNumFreeSlots(2) + GetContainerNumFreeSlots(3) + GetContainerNumFreeSlots(4)");
-            //MessageBox.Show(functionManager.GetLocalizedText("freeslots"));
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -45,8 +42,6 @@ namespace iKick
             functionManager = new FunctionManager(application);
             string appPath = Path.GetDirectoryName(Application.ExecutablePath);
             IniFile ini = new IniFile(appPath + @"\config.ini");
-            //functionManager.LuaDoString("local frame = CreateFrame(\"FRAME\", \"WhispFrame\"); frame:RegisterEvent(\"CHAT_MSG_WHISPER\"); local function whispHandler(arg1, arg2, WmsgContent, WmsgAuthor) fMsgTest = \"[W From] [\" .. WmsgAuthor .. \"]: \" .. WmsgContent; end frame:SetScript(\"OnEvent\", whispHandler);");
-            //kickName.Text = ini.IniReadValue("CONFIG", "kickName");
             functionManager.LuaDoString("print(\"|cffff6060<|r|cFF00FFFFiKick|cffff6060>|r Ready !\")");
         }
 
@@ -54,7 +49,6 @@ namespace iKick
         {
             string appPath = Path.GetDirectoryName(Application.ExecutablePath);
             IniFile ini = new IniFile(appPath + @"\config.ini");
-            //ini.IniWriteValue("CONFIG", "kickName", kickName.Text);
         }
 
         private void kick_Tick(object sender, EventArgs e)
@@ -70,19 +64,6 @@ namespace iKick
                     functionManager.LuaDoString(textBox2.Text);
                 }
             }
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-          //  UInt32 chatStart = 0xAD79B8;
-          //  UInt32 NextMessage = 0x17C0;
-          //  textBox1.Clear();
-          //  for (uint i = 0; i < 260; i++)
-         //   {
-         //       var baseMsg = chatStart + (i * NextMessage);
-         //       string s = SMemory.ReadASCIIString(application.ProcessHandle, ((uint)application.MainModule.BaseAddress + baseMsg) + 0x3C, 0xFF);
-         //       textBox1.Text += s + '\n';
-          //  }
         }
 
         private void trackBar1_Scroll(object sender, EventArgs e)
@@ -101,13 +82,11 @@ namespace iKick
                 {
                     checkBox1.Checked = false;
                     functionManager.LuaDoString("print(\"|cffff6060[|r|cFF00FFFFiKick|cffff6060]|r Autokick Disabled !\")");
-                    //functionManager.LuaDoString("RaidNotice_AddMessage(RaidWarningFrame, \"|cffff6060[|r|cFF00FFFFLazyRotation|cffff6060]|r Rotation Disabled !\", ChatTypeInfo[\"RAID_WARNING\"])");
                 }
                 else
                 {
                     checkBox1.Checked = true;
                     functionManager.LuaDoString("print(\"|cffff6060[|r|cFF00FFFFiKick|cffff6060]|r Autokick Enabled !\")");
-                    //functionManager.LuaDoString("RaidNotice_AddMessage(RaidWarningFrame, \"|cffff6060[|r|cFF00FFFFLazyRotation|cffff6060]|r Rotation Enabled !\", ChatTypeInfo[\"RAID_WARNING\"])");
                 }
             }
         }
