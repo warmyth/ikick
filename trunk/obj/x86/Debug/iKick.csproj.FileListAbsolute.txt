@@ -29,3 +29,16 @@ D:\Save\Documents\Visual Studio 2010\Projects\iKick\iKick\obj\x86\Debug\ResGen.w
 C:\Users\Nicolas\Documents\Visual Studio 2010\Projects\iKick\iKick\bin\Debug\iKick.exe.config
 C:\Users\Nicolas\Documents\Visual Studio 2010\Projects\iKick\iKick\obj\x86\Debug\iKick.exe
 C:\Users\Nicolas\Documents\Visual Studio 2010\Projects\iKick\iKick\obj\x86\Debug\iKick.pdb
+C:\Users\Nicolas\Documents\Visual Studio 2010\Projects\iKick\iKick\ikick\bin\Debug\iKick.exe.config
+C:\Users\Nicolas\Documents\Visual Studio 2010\Projects\iKick\iKick\ikick\obj\x86\Debug\iKick.exe
+C:\Users\Nicolas\Documents\Visual Studio 2010\Projects\iKick\iKick\ikick\obj\x86\Debug\iKick.pdb
+C:\Users\Nicolas\Documents\Visual Studio 2010\Projects\iKick\iKick\ikick\obj\x86\Debug\iKick.csprojResolveAssemblyReference.cache
+C:\Users\Nicolas\Documents\Visual Studio 2010\Projects\iKick\iKick\ikick\obj\x86\Debug\iKick.Form1.resources
+C:\Users\Nicolas\Documents\Visual Studio 2010\Projects\iKick\iKick\ikick\obj\x86\Debug\iKick.Properties.Resources.resources
+C:\Users\Nicolas\Documents\Visual Studio 2010\Projects\iKick\iKick\ikick\obj\x86\Debug\iKick.csproj.GenerateResource.Cache
+C:\Users\Nicolas\Documents\Visual Studio 2010\Projects\iKick\iKick\ikick\bin\Debug\iKick.exe
+C:\Users\Nicolas\Documents\Visual Studio 2010\Projects\iKick\iKick\ikick\bin\Debug\iKick.pdb
+C:\Users\Nicolas\Documents\Visual Studio 2010\Projects\iKick\iKick\ikick\bin\Debug\BlackMagic.dll
+C:\Users\Nicolas\Documents\Visual Studio 2010\Projects\iKick\iKick\ikick\bin\Debug\fasmdll_managed.dll
+C:\Users\Nicolas\Documents\Visual Studio 2010\Projects\iKick\iKick\ikick\bin\Debug\BlackMagic.pdb
+C:\Users\Nicolas\Documents\Visual Studio 2010\Projects\iKick\iKick\ikick\bin\Debug\BlackMagic.xml
