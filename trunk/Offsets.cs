@@ -16,13 +16,8 @@ namespace iKick
         public enum Endscene : uint
         {
             ClntObjMgrGetActivePlayerObjAddress = 0x33E0,
-            Lua_DoStringAddress = 0x75AD0,
-            Lua_GetLocalizedTextAddress = 0x4AB730,
-        }
-        public enum afk
-        {
-            LastHardwareAction = 0x9D3798,
-            TimeStamp = 0x9C0B14,
+            Lua_DoStringAddress = 0x75AC0,
+            Lua_GetLocalizedTextAddress = 0x4AB6A0,
         }
     }
 }
