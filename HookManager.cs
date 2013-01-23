@@ -69,38 +69,31 @@ namespace iKick
                     process.Asm.AddLine("pushfd");
                     process.Asm.AddLine("pushad");
 
-                    //verif inject wait
                     process.Asm.AddLine("mov eax, [" + injectionAddress + "]");
                     process.Asm.AddLine("test eax, eax");
                     process.Asm.AddLine("je @out");
 
-                    //exec code wait
                     process.Asm.AddLine("mov eax, [" + injectionAddress + "]");
                     process.Asm.AddLine("call eax");
 
-                    //copie du pointer ->
                     process.Asm.AddLine("mov [" + returnAddress + "], eax");
 
                     process.Asm.AddLine("mov edx, " + injectionAddress);
                     process.Asm.AddLine("mov ecx, 0");
                     process.Asm.AddLine("mov [edx], ecx");
 
-                    //fermeture de la fonction
                     process.Asm.AddLine("@out:");
 
-                    //on injecte§
                     uint sizeAsm = (uint)(process.Asm.Assemble().Length);
 
                     process.Asm.Inject(codeCave);
 
                     int sizeJumpBack = 5;
 
-                    // create jump back stub
                     process.Asm.Clear();
                     process.Asm.AddLine("jmp " + (pEndScene + sizeJumpBack));
                     process.Asm.Inject(codeCave + sizeAsm);// + (uint)sizeJumpBack);
 
-                    // create hook jump
                     process.Asm.Clear(); // $jmpto
                     process.Asm.AddLine("jmp " + (codeCave));
                     process.Asm.Inject(pEndScene);

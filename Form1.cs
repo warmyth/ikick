@@ -19,7 +19,7 @@ namespace iKick
 {
     public partial class Form1 : Form
     {
-        public static uint isLoadingOffset = 0xAD5636; //GameState
+        public static uint isLoadingOffset = 0xCC9EFA; //GameState
         readonly Process[] processes = Process.GetProcessesByName("Wow");
         BlackMagic application;
         FunctionManager functionManager;
